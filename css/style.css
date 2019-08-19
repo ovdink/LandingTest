@@ -9,6 +9,7 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: #5e5e5e;
+    min-width: 740px;
 }
 
 a {
@@ -289,7 +290,7 @@ header {
     font-weight: 500;
     line-height: 24px;
     color: #212020;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .service-text {
@@ -403,5 +404,118 @@ header {
 .about-btn::after {
     color: #000;
 }
+
+.form {
+    height: 517px;
+    padding: 50px 0px 30px;
+}
+
+/* .form .container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.form-content {
+    max-width: 460px;
+}
+
+.form-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.form-title-box {
+    max-width: 520px;
+    padding-left: 140px;
+    position: relative;
+}
+
+.form-title-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #ffc222;
+    top: 11px;
+}
+
+.form-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #212020;
+    margin-bottom: 20px;
+}
+
+.form-text {
+    letter-spacing: 0.1xp;
+}
+
+.form-woman {
+    padding-bottom: 40px;
+    background-image: url(../img/form-fon.png);
+    min-height: 460px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 40px;  
+}
+
+.form-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-left {
+    max-width: 260px;
+    width: 100%;
+}
+.form-right {
+    margin-left: 30px;
+    max-width: 555px;
+    width: 121%;
+}
+
+.form-message {
+    height: 200px;
+    width: 555px;
+    outline: none;
+    resize: none;
+}
+
+.form-flex label input {
+    width: 260px;
+    height: 40px;
+    color: #282828;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.form-btn {
+    margin-top: 39px;
+    color: #282828;
+    letter-spacing: 0.4px;
+    float: right;
+}
+
+.form-left .jq-selectbox.jqselect {
+    display: block;
+    width: 100%;
+}
+.form-left .jq-selectbox__select {
+    border-radius: 0;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    background-color: transparent;
+}
+
 
 /* === / BODY === */
