@@ -466,7 +466,13 @@ label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    line-height: 40px;
+    line-height: 38px;
+    margin-bottom: 2px;
+    color: #282828;
+}
+
+select {
+    outline: none;
 }
 
 .form-flex {
@@ -490,6 +496,7 @@ label {
     width: 555px;
     outline: none;
     resize: none;
+    border: 1px solid #e6e6e6;
 }
 
 .form-flex label input {
@@ -498,6 +505,7 @@ label {
     color: #282828;
     font-family: 'Roboto', sans-serif;
     outline: none;
+    border: 1px solid #e6e6e6;
 }
 
 .form-btn {
@@ -522,24 +530,21 @@ label {
     box-shadow: none;
     outline: none;
     margin-bottom: 0px;
-    max-height:100%;
-    
+    max-height: 100%;
+    margin-top: 5px;
 }
 
 .form-left .jq-selectbox__trigger {
     border: none;
     position: relative;
-    display: inline-block;
-    top: -32px;
-    left: 216px;
 }
 
 .form-left .jq-selectbox__trigger::after {
     font-family: 'icomoon';
     content: "\f105";
     position: absolute;
-    left: 7px;
-    top: 3px;
+    left: 225px;
+    top: -28px;
     transform: rotate(90deg);
     padding: 0;
     margin: 0;
@@ -549,13 +554,46 @@ label {
     display: none;
 }
 
-/* 
-.form-left .jq-selectbox__trigger::before {
-    display: block;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #000;
-} */
+.point {
+    background-image: url(../img/adv-fon.jpg);
+    min-height: 285px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 65px;
+}
 
+.point-icon::before {
+    font-family: 'icomoon';
+    content: "\f00c";
+    color: #fff;
+    border: 2px solid #ffc222;
+    padding: 11px;
+}
+
+.point-block {
+    max-width: 360px;
+    text-align: center;
+}
+
+.point-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 17px;
+}
+
+.point-text {
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #d3d2d2;
+}
+.point-flex {
+    display: flex;
+    justify-content: space-between;
+}
 /* === / BODY === */
