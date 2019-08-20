@@ -466,7 +466,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    line-height: 40px;  
+    line-height: 40px;
 }
 
 .form-flex {
@@ -478,6 +478,7 @@ label {
     max-width: 260px;
     width: 100%;
 }
+
 .form-right {
     margin-left: 30px;
     max-width: 555px;
@@ -509,13 +510,52 @@ label {
 .form-left .jq-selectbox.jqselect {
     display: block;
     width: 100%;
-}
-.form-left .jq-selectbox__select {
-    border-radius: 0;
-    height: 40px;
-    border: 1px solid #e6e6e6;
-    background-color: transparent;
+    outline: none;
 }
 
+.form-left .jq-selectbox__select {
+    border-radius: 0;
+    height: 40px !important;
+    border: 1px solid #e6e6e6;
+    background-color: transparent;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 0px;
+    max-height:100%;
+    
+}
+
+.form-left .jq-selectbox__trigger {
+    border: none;
+    position: relative;
+    display: inline-block;
+    top: -32px;
+    left: 216px;
+}
+
+.form-left .jq-selectbox__trigger::after {
+    font-family: 'icomoon';
+    content: "\f105";
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    transform: rotate(90deg);
+    padding: 0;
+    margin: 0;
+}
+
+.form-left .jq-selectbox__trigger-arrow {
+    display: none;
+}
+
+/* 
+.form-left .jq-selectbox__trigger::before {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+} */
 
 /* === / BODY === */
